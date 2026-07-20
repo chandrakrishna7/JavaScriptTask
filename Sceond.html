@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Task1
+        var Name="chandhu"
+        const EMPID="Emp1101"
+        var Depart="Full Stack Developer"
+        let Salary=50000
+        IsPermanenet=true;
+         console.log("Name :",Name);
+         console.log("Emmployee Id :",EMPID);
+         console.log("Department :",Depart);
+         console.log("Salary :",Salary);
+         console.log("Ispermanent :",IsPermanenet);
+
+         //Task2
+         let Student={
+            Name:"Chandra krishna",
+            Age:23,
+            course:"Cse",
+            College:"MLRITM",
+           Passed_Status:"Passed"
+         }
+         console.log("Student Name :",Student.Name);
+         console.log("Course :",Student.course);
+         console.log("Passed_Status :",Student.Passed_Status);
+         
+
+         //Task3
+         let Product=["Milk","Oil","Sugar","Rice","Soap"]
+         console.log(Product[0]);
+         console.log(Product[2]);
+         console.log(Product[Product.length-1]);
+         console.log(Product);
+
+         //TAsk4
+
+         let EmployeeData={
+            name:"Chandra Krishan t",
+            Designation:"Java Full Stcak Developer",
+            Salary:50000,
+            Skills:["java","java Script","Html","Css","Sql"]
+         }
+         console.log(EmployeeData.name);
+         console.log(EmployeeData.Designation);
+         console.log(EmployeeData.Skills[1]);
+
+         //Task5
+
+        let Basic_Salary=25000
+        let  Bonus=5000
+        let Total_Salary=Basic_Salary+Bonus
+        console.log("Expected Salary :",Total_Salary);
+
+        //Tsak6
+        
+       let Product_Price=4500
+       let Gst=18
+
+       let Gst_Amount=Product_Price*(Gst/100)
+       console.log("Gst Amount :",Gst_Amount);
+
+       let Final_Amount=Product_Price+Gst_Amount
+       console.log("Final Amount :",Final_Amount);
+
+       //Task7
+
+       let Number=prompt("Enter Any Number :")
+      console.log(Number%2==0 ? "Even Number":"Odd Number");
+       
+
+    //Task8
+    const Username=prompt("Enter User name");
+    const PassWord=prompt("Enter Password");
+
+    console.log(Username==="Admin" && PassWord==="12345"? "Login Sucess":"Invalid Credenials");
+    
+//Task9 Voting Eligibility
+
+let Age=prompt("Enter Age");
+
+console.log(Age >=18? "Eligible For Vote":"Not Eligible for Vote");
+
+//Task10 Emi Eligibility
+
+let Salarys=prompt("Enter Your Salary ")
+let Experience =prompt("ENter Your Experience")
+
+console.log(Salarys>=40000 && Experience>=2 ? "Eligible" : "Not Eligible");
+
+//Task11 Product Discount
+
+let product_price=5000
+
+let DiscountPercentage="10"
+
+let DiscouuntAmount=product_price*(DiscountPercentage/100);
+
+let FinalPrice=product_price-DiscouuntAmount
+
+console.log(FinalPrice);
+
+//Task12 User Registration
+
+let name="chandra krishna t"
+let Email="chandrakrishnat@thestackly.com"
+let Phone=9876543210
+let city="Hyderabad"
+
+console.log("-----------------User Details ------------");
+
+console.log("Name :",Name);
+console.log("Email :",Email);
+console.log("Phone :",Phone);
+console.log("City :",city);
+
+
+//Task13 Social Media Profile
+
+let UserName="Chandhuuu._.07"
+let Followers=300
+let Following=250
+let Posts=2
+let VerifiedStatus="Verified"
+console.log("UserName :",UserName);
+console.log("Followers :",Followers);
+console.log("Verified Status :",VerifiedStatus);
+
+//Task14 Restaurant Menu
+
+let Menu=["Idli","Dosa","Poori","Paroota","Meals"]
+
+console.log("Second Item :",Menu[1]);
+console.log("Fourth Item :",Menu[3]);
+console.log("Last Item :",Menu[Menu.length-1]);
+
+//Task15 Banking System
+
+let Account_Balance=20000
+
+let WithDraw_Amount=prompt("Enter Withdraw Amount")
+
+let Remaining_Balance=Account_Balance-WithDraw_Amount
+console.log(Remaining_Balance);
+
+//Task16 Mobile Store
+
+let mobile_Price=100000;
+let Mobile_Exchange=50000;
+let cupon=10000;
+
+let final_Amount=mobile_Price-Mobile_Exchange-cupon
+
+console.log(final_Amount);
+
+ //Task17 Employee Promotion
+
+let experience=prompt("Enter Years Of Experience")
+
+let performance=prompt("Enter Performance True or False")
+
+console.log( experience>=5 && performance=="true" ? "Promotion Aproved":"Promotion pending");
+
+//Task18 Movie Ticket
+
+let Ticketprice=200
+let no_of_people=5
+
+let TotalAmount=Ticketprice*no_of_people
+console.log(TotalAmount);
+
+//Task19 Weather 
+
+let weather=25
+console.log(weather>=30?"hot":"normal weather");
+
+//Task20 Mini Hr Management
+
+let Employeed={
+    empCode: "EMP150",
+    name: "chandra krishna",
+    department: "Frontend",
+    designation: "Associate Software Engineer",
+    salary: 28000,
+    skills: ["HTML","CSS","JavaScript","React"],
+    permanent: true
+}
+console.log(Employeed.empCode);
+console.log(Employeed.name);
+console.log(Employeed.department);
+console.log(Employeed.salary);
+console.log(Employeed.skills[Employeed.skills.length-1]);
+console.log(Employeed.permanent);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         
+         
+         
+         
+         
+         
+         
+         
+         
+
+         
+    </script>
+</body>
+</html>
