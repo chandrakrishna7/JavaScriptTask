@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       // task1
+        console.log("Employee Login System")
+        let UserName=prompt("Enter User Name")
+        let Password=prompt("Enter Password")
+        if(UserName=="Admin" && Password=="12345"){
+            console.log("Login Sucessful")
+        }
+        else{
+            console.log("Invalid UserName or Password")
+        }
+        //Task2
+        console.log("E-Commerce Discount");
+        let Amount=prompt("Enter The Amount")
+        if(Amount>=5000){
+           let afterDis= Amount*(20/100)
+           console.log(Amount- afterDis);
+        }
+        else{
+            console.log("No Discount");
+            
+        }
+        //task3
+        console.log("Atm Withdraw");
+        let Balance=10000
+        let Withdrawamount=prompt("Enter Withdraw Amount")
+        if(Withdrawamount<=Balance){
+            console.log("Transaction Sucessful")
+            console.log("Remaining Balance :",Balance-Withdrawamount);
+        }
+        else{
+            console.log("Insufficient Balance");
+            
+        }
+        //Task4
+        console.log("Student Grades");
+        let Marks=60
+       if(Marks>=90){
+        console.log("A+");
+       }
+       else if(Marks>=80){
+        console.log("A");
+       }
+        else if(Marks>=70){
+        console.log("B");
+       }
+        else if(Marks>=60){
+        console.log("c");
+       }
+        else if(Marks>=55){
+        console.log("Fail");
+       }
+        //Task5
+        console.log("Traffic Signals");
+        let Signals=prompt("Enter green or red or yellow")
+        switch(Signals){
+            case "red":
+                console.log("Stop");
+                break;
+             case "green":
+                console.log("Go");
+                break;
+             case "yellow":
+                console.log("Ready");
+                break;
+                default:
+                    console.log("Invalid");
+        }
+        //task6
+        console.log("Online Shopping");
+        let OrderAmount=prompt("Enter Amount")
+        let DeliveryAmount=80;
+        if(OrderAmount>=1000){
+            console.log("Final Amount :",OrderAmount-DeliveryAmount);
+        }
+        else{
+            console.log("order Amount :",Number(OrderAmount)+Number(DeliveryAmount));
+            
+        }
+        //task7
+        console.log("User Age Verification");
+        let Age=prompt("Enter Age")
+        if(Age<18){
+            console.log("Not Eligible");
+        }
+        else{
+            console.log("Eligible");
+            
+        }
+        //task8
+        console.log("Largest");
+        
+        let a=prompt("Enter Any number")
+        let b=prompt("Enter Any Number")
+        if(a<b){
+            console.log("B is greaterthan A");
+        }
+        else{
+            console.log("A is Greaterthan B");
+            
+        }
+        //Task9
+       console.log("Mobile pin");
+        
+        let pin=prompt("Enter pin")
+        if(pin.length==4){
+            console.log("success");
+        }
+        else if(pin.length>4){
+            console.error("pin should contains only 4 digits");
+            
+        }
+        //Task10
+        console.log("Product Stock");
+        let Stock=prompt("Enter Stock")
+        if(Stock<=0){
+            console.log("Out of Stock");
+            
+        }
+        else
+            console.log("Available");
+        //Task11
+        console.log("Salary Bonus");
+        let salary=prompt("Enter Your Salary")
+        if(salary>=50000){
+         salary=Number(salary)+10000;
+            console.log("Final Salary :",salary);
+        }
+        else if(salary>=30000){
+             salary=Number(salary)+5000;
+            console.log("fianl salary :",salary);
+        }
+        else
+        salary=Number(salary)+2000
+            console.log("Final salary :",salary);
+        //Task12
+        console.log("Electriccity Bill");
+        let CurrentUnits=1000
+        if(CurrentUnits>=0 && CurrentUnits<=100){
+            console.log("₹2");
+        }
+        else if(CurrentUnits>=101 && CurrentUnits<=200){
+            console.log("₹4");
+        }
+        else if(CurrentUnits>200){
+            console.log("₹6");
+        }
+        //Task13
+        console.log("Movie Tickets Booking");
+        let age=prompt("Enter Age :")
+        if(age<5){
+            console.log("free");
+        }        
+        else if(age>=5 && age<=18){
+            console.log("₹100");
+        }
+        else if(age>18){
+            console.log("₹200");
+        }
+       // Task14
+        console.log("Hospital Token System");
+        let patient_Condition=prompt("Enter Condition")
+        switch(patient_Condition){
+            case "Emergency":
+                console.log("Token 1");
+                break;
+            case "Senior Citizen":
+                console.log("Priority");
+                break;
+           case "Noraml":
+            console.log("Regular Queue");
+            break;
+            default:
+                console.log("Invalid Input");
+                    
+        }
+        //Task15
+        console.log("Company Attendence");
+        let Status=prompt("Enter Attendence Status")
+        if(Status=="present"){
+            console.log("Working");
+        }
+        else if(Status=="leave"){
+            console.log("leave Approved");
+        }
+        else if(Status=="absent"){
+            console.log("Salary Deduction");
+            
+        }
+        //Task16
+        console.log("Grocery Cart Total");
+        let Rice=500
+        let Sugar=300
+        let oil=250
+
+        let Total=Rice+Sugar+oil
+        console.log(Total);
+
+        if(Total>1000){
+            let discount=Total*(10/100)
+            console.log("After Discount :",Total-discount);
+            
+        }
+        else{
+            console.log(Total);
+            
+        }
+        //Task17
+        console.log("Array Task---");
+        let Products=["Laptop","Mouse","Keyboard","Monitor"]
+        let count=0;
+        for(const a of Products){
+            count++;
+            console.log(`${count} ${a}`); 
+        }
+        //Task18
+        console.log("Employee Details");
+        let employee={
+            name:"Chandhu",
+            role:"Develpoer",
+            salary:50000
+        }
+        for(const b in employee){
+            console.log(employee[b]);
+            
+        }
+        //Task19
+        console.log("Type Casting");
+        let  Num=Number("100")
+        console.log(Num,typeof(Num));
+        let boolval=Boolean("true")
+        console.log(boolval,typeof(boolval));
+        let strval=String(200)
+        console.log(strval,typeof(strval));
+        Task20
+        console.log("Banking Menu");
+        let choice=2
+
+        switch(choice){
+            case 1:
+                console.log("Deposited");
+                break;
+            case 2:
+                console.log("Withdraw");
+                break;
+            case 3:
+                console.log("Balance");
+                break;
+            case 4:
+                console.log("Exit");
+                break;
+            default:
+                console.log("Invalid Input");                           
+        }
+        //Mini Project 
+        console.log("Employee Management System");
+        let employee_Data={
+            name:"chandra krishna",
+            role:"java developer",
+            Salary:50000,
+            attendence:"present",
+            skills:["html","css","js","java"]
+        } ; 
+         let Choices=2;
+        switch (Choices) {
+            case 1:
+            console.log("Added Employee data");
+        break;
+        case 2:
+            for(let e in employee_Data){
+                console.log(`${e} ${employee_Data[e]}`);
+            }
+            break;
+        case 3:
+            let emp_bonous=0
+            if(employee_Data.Salary>=50000){
+                emp_bonous=10000;
+                console.log(employee_Data.Salary+emp_bonous);
+            }
+            else if(employee_Data.Salary>=30000){
+                emp_bonous=5000;
+                console.log(employee_Data.Salary+emp_bonous);
+            }
+            else{
+                emp_bonous=2000;
+                console.log(employee_Data.Salary+emp_bonous);
+                
+            }
+            break;
+        case 4:
+            console.log(employee_Data.attendence);
+            break;
+        case 5:
+            console.log(employee_Data.Salary);
+            break;
+        case 6:
+            console.log("Exit");
+               break;
+        default:
+            console.log("invalid");
+        }
+        
+        
+
+        
+
+        
+        
+        
+        
+        
+        
+        
+            
+      
+            
+        
+        
+        
+        
+        
+
+
+
+
+        
+    </script>
+</body>
+</html>
