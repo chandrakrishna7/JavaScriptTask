@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+<script>
+    //Task1 Student Registartion form
+
+        let Studentname="chandhu";
+        let department="cse";
+        let cgpa=8;
+        console.log("StudentName :",Studentname);
+        console.log("Department :",department);
+        console.log("CGPA :",cgpa);
+        let status=cgpa>=7 ? "Status : Eligible" :"Status : Not Eligible"
+       console.log(status);
+
+
+    //Task2 online Shopping bill
+
+    let productprice=2500;
+    let quantity=3;
+
+    let Total=productprice*quantity;
+    let Discount;
+
+    if(Total>5000){
+        Discount=Total*(10/100);
+    }
+    else{
+        Discount=0;
+    }
+    console.log("Total :",Total);
+    console.log("Discount :",Discount);
+    let finalprice=Total-Discount;
+    console.log("Final Price :",finalprice);
+
+    //Task3 Employee Salary
+
+    let basicsalary=35000;
+    let Bonus=5000;
+    let Tax=3000;
+
+    console.log("Basci Salary :",basicsalary);
+    console.log("Bonus :",Bonus);
+    console.log("Tax :",Tax);
+    let netsalary=basicsalary+Bonus-Tax;
+    console.log("Net Salary :",netsalary);
+    
+    //Task4 Movie Ticket Booking
+
+    let Movie="leo";
+    let ticketprice=180;
+    let tickets=5;
+
+    console.log("Movie :",Movie);
+    console.log("ticketprice :",ticketprice);
+    console.log("Total :",ticketprice*tickets);
+    
+    //Task5 login system
+
+    let userName="admin";
+    let password="12345";
+
+    if(userName=="admin" && password=="12345"){
+        console.log("Login sucess");
+        
+    }
+    else{
+        console.log("Invalid Username or Password");
+        
+    }
+
+    //Task6 Electricity Bill
+
+    let Units=250
+
+    if(Units>=0 && Units<=100){
+        console.log("Total Bill :₹5");
+    }
+    else if(Units>=101 && Units<=200){
+        console.log("Total Bill :₹7");
+    }
+    else if(Units>200){
+        console.log("Total Bill :₹10");
+    }
+    
+
+    //Task7 Restaurant order
+
+    let menu = ["Dosa","Idly","Poori","Meals"];
+
+    console.log(menu[0]);
+    console.log(menu[menu.length-1]);
+    console.log(menu);
+
+    menu.splice(menu.includes("Idly"),1,"Fired Rice");
+
+    console.log(menu);
+
+    //Task8 Employee Object
+
+    let employee = {
+        name:"chandhu",
+        role:"Java Developer",
+        salary:40000
+    }
+    console.log("Employee Name :",employee.name);
+    console.log("Role :",employee.role);
+    console.log("Salary :",employee.salary);
+
+    //Task9 Product Inventory
+
+    let product = ["Mouse","Keyboard","Monitor","CPU","Speaker"];
+     let count=0;
+    for(let a of product){
+        count++;
+        console.log(`${count} ${a}`);
+    }
+
+    //Task10 Function
+
+    function Area(length,width){
+        return length*width
+    }
+    console.log("Area =",Area(10,20));
+    
+    //Task11 Bank Deposit
+
+    let Balance=5000;
+    console.log("current Balance :",Balance);
+    
+    function deposit(amount){
+        Balance+=amount;
+        console.log("Deposit amount :",amount);
+    }
+    function withdraw(amount){
+        Balance-=amount;
+        console.log("withdraw amount :",amount);
+    }
+    deposit(2000);
+    withdraw(1000);
+    console.log("final Balance :",Balance);
+    
+    //Task12 call Back function
+    
+    function Addition(a,b){
+        console.log(a+b);
+    }
+     function calculate(callback,a,b){
+        callback(a,b);
+        console.log("calculation completed");
+     }
+
+     calculate(Addition,10,20)
+    
+    
+    // Task13 Generator fun
+        
+   function* cupongen(){
+    yield "WELCOME50";
+    yield "SAVE50";
+    yield "BIGSALE";
+    yield "SAVE100";
+    yield "WELCOME100"
+   }     
+
+   let cupon=cupongen();
+   console.log(cupon.next().value);
+   console.log(cupon.next().value);
+   console.log(cupon.next().value);
+   console.log(cupon.next().value);
+   console.log(cupon.next().value);
+
+//Task14 currying
+
+function discounts(a){
+    return function(b){
+        return function(c){
+            return a+b+c;
+        }
+    }
+}
+console.log( discounts(10)(20)(30));
+
+//Task15 spread operator
+
+let frontend = ["HTML","CSS","JS"];
+let backend = ["Node","Express","MongoDB"];
+
+console.log(...frontend,...backend);
+
+//Task16 Rest operator
+
+// function sum(...numbers){
+//     let [a1,a2,a3,a4,a5]=numbers;
+//     console.log(a1+a2+a3+a4+a5);
+    
+// }
+// sum(10,20,30,40,50)
+
+function sum(...nummbers){
+    let total=0;
+    for(let b of nummbers){
+        total+=b;
+    }
+    return total;
+}
+console.log(sum(10,20,30,40,50));
+
+//Task17 Array Destructuring
+
+let colors = ["Red","Blue","Green","Yellow"];
+
+// let c1=colors[0];
+// let c2=colors[1];
+// let c3=colors[2];
+// let c4=colors[3];
+
+let [c1,c2,c3,c4]=colors;
+
+console.log(c1);
+console.log(c2);
+console.log(c3);
+console.log(c4);
+
+//Task18 Object Destructuring
+
+let user = {
+name:"chandhu",
+city:"hyd",
+role:"Developer"
+}
+
+let {name,city,role}=user;
+
+console.log(name);
+console.log(city);
+console.log(role);
+
+//Task19 Shopping cart
+
+let cart = ["Mobile","Laptop","Watch"];
+
+cart.push("Tab");
+console.log(cart);
+
+cart.pop()
+console.log(cart);
+
+cart.unshift("Tab");
+console.log(cart);
+
+cart.shift();
+console.log(cart);
+
+//Task20 Product Search
+
+let products = ["Laptop","Mouse","Keyboard","Monitor","Speaker"];
+
+console.log(products.includes("Monitor")? "Product Available" :"Out of stock");
+
+
+</script>
+</body>
+</html>
