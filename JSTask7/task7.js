@@ -149,7 +149,7 @@ if (char && numbers && UpperCase && Specialchar) {
 let products = ["Laptop", "Mobile", "Watch", "Camera"];
 
 let requiredproduct="Mobile";
-if(products.includes(requiredproduct)){
+if(products.includes(requiredproduct)){ 
     console.log("available");
 }
 else
